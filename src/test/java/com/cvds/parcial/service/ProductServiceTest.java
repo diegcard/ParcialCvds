@@ -60,5 +60,20 @@ class ProductServiceTest {
         assertEquals(expected, expected);
     }
 
+    @Test
+    void saveProductInDataBaseAlreadyExits(){
+        Product product1 = new Product("Switch", 299.99f, 10, "Consoles");
+        Product product2 = new Product("Switch", 299.99f, 10, "Consoles");
+        Product savedProduct1 = productService.saveProduct(product1);
+        assertThrows(RuntimeException.class, () -> productService.saveProduct(product2));
+    }
+
+    @Test
+    void getProductById() throws ProductException {
+        Product product1 = new Product("Switch", 299.99f, 10, "Consoles");
+        productService.saveProduct(product1);
+        Product pro = productService.getProductByName(product1.getName());
+        assertEquals(product1, pro);
+    }
 
 }

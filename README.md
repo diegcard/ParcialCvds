@@ -34,3 +34,8 @@
 Se hace las respentibas pruebas de los dos agentes y se usan los metodos de
 /product/update/{name}/{stock} para conprobar que todo este corriendo correctamente 
 ![img_5.png](images/img_5.png)
+
+## Patron de Diseño
+
+Yo use el patron observer que creo una clase abstracta y tengo dos agente Log y Dangerous, basado en esto se puede representar los dos diferentes mensaje sque quiero cada vez que se modifique la cantidad de stock de un producto
+
