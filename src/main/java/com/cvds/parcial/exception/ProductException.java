@@ -16,4 +16,10 @@ public class ProductException extends Exception{
             super(message);
         }
     }
+
+    public static class ProductAlreadyExitsInDatabse extends ProductException {
+        public ProductAlreadyExitsInDatabse(String message) {
+            super(message);
+        }
+    }
 }

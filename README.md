@@ -9,3 +9,24 @@
 ## Diegrama de clases
 
 
+
+
+## Provando metodos en PostMan
+
+### /products/all
+
+![img.png](img.png)
+
+### /products/Play
+
+![img_1.png](img_1.png)
+
+### /products/save
+
+![img_2.png](img_2.png)
+
+![img_3.png](img_3.png)
+
+### /product/update/{name}/{stock}
+
+![img_4.png](img_4.png)
