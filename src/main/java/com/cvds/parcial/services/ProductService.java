@@ -7,6 +7,9 @@ import org.springframework.stereotype.Service;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * This class represent the service of a products
+ */
 @Service
 public class ProductService {
     private Map<String, Product> products;
@@ -16,10 +19,10 @@ public class ProductService {
      */
     public ProductService(){
         products = new HashMap<>();
-        Product p1 = new Product("Xbox", 45.4f, 5, "Consoles");
+        /*Product p1 = new Product("Xbox", 45.4f, 5, "Consoles");
         Product p2 = new Product("Play", 74.7f, 8, "Consoles");
         saveProduct(p1);
-        saveProduct(p2);
+        saveProduct(p2);*/
     }
 
     /**
@@ -34,7 +37,8 @@ public class ProductService {
         if(products.get(product.getName()) != null){
             throw new RuntimeException("The product already exits in the database");
         }
-        return products.put(product.getName(), product);
+        products.put(product.getName(), product);
+        return products.get(product.getName());
     }
 
 

@@ -15,22 +15,22 @@
 
 ### /products/all
 
-![img.png](img.png)
+![img.png](images/img.png)
 
 ### /products/Play
 
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 ### /products/save
 
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 
 ### /product/update/{name}/{stock}
 
-![img_4.png](img_4.png)
+![img_4.png](images/img_4.png)
 
 Se hace las respentibas pruebas de los dos agentes y se usan los metodos de
 /product/update/{name}/{stock} para conprobar que todo este corriendo correctamente 
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
