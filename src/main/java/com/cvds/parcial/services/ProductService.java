@@ -59,6 +59,12 @@ public class ProductService {
         return this.products.get(name);
     }
 
+    /**
+     * this service representate of a stock of product
+     * @param name name of product
+     * @param stock quantity
+     * @return Product
+     */
     public Product updateStockProduct(String name, int stock){
         if(name == null){
             throw new RuntimeException("The name is null");
@@ -67,6 +73,11 @@ public class ProductService {
             throw new RuntimeException("The product not found in database");
         }
         products.get(name).setStock(stock);
+        if (products.get(name).getStock() >= 5){
+            new AgentLog().notifyAgent(products.get(name));
+        }else {
+            new AgentDanger().notifyAgent(products.get(name));
+        }
         return products.get(name);
     }
 }
