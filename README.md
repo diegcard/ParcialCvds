@@ -6,12 +6,12 @@
 - Spring Boot
 - Maven
 
-## Diegrama de clases
+## Diagrama de clases
 
 
 
 
-## Provando metodos en PostMan
+## Probando metodos en PostMan
 
 ### /products/all
 
@@ -39,3 +39,8 @@ Se hace las respentibas pruebas de los dos agentes y se usan los metodos de
 
 Yo use el patron observer que creo una clase abstracta y tengo dos agente Log y Dangerous, basado en esto se puede representar los dos diferentes mensaje sque quiero cada vez que se modifique la cantidad de stock de un producto
 
+## Testeos en jacoco
+
+Con un 74% de covertura 
+
+![img.png](images/img10.png)

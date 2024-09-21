@@ -76,4 +76,18 @@ class ProductServiceTest {
         assertEquals(product1, pro);
     }
 
+    @Test
+    void getAgentsLog(){
+        Product product1 = new Product("Switch", 299.99f, 10, "Consoles");
+        productService.saveProduct(product1);
+        assertEquals(productService.updateStockProduct(product1.getName(), 45),product1);
+    }
+
+    @Test
+    void getAgentsDangerousLog(){
+        Product product1 = new Product("Switch", 299.99f, 10, "Consoles");
+        productService.saveProduct(product1);
+        assertEquals(productService.updateStockProduct(product1.getName(), 1),product1);
+    }
+
 }
